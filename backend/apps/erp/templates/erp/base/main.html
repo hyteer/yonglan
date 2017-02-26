@@ -1,0 +1,12 @@
+{% extends "erp/base/base.html" %}
+{% load render_bundle from webpack_loader %}
+
+{% block content %}
+<div id="root"></div>
+{% render_bundle 'vendors' %}
+{% render_bundle 'erp' %}
+{% endblock %}
+
+{% block scripts %}
+<script src="/static/erp/dist/js/app.min.js"></script>
+{% endblock %}
