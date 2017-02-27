@@ -13,6 +13,8 @@ class App extends Component {
         <p className="App-intro">
           An django react project,Hacked by YT.
         </p>
+        <a href="#">I forgot my password</a><br/>
+        <a href="register.html" class="text-center">Register a new membership</a>
       </div>
     );
   }

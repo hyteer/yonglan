@@ -45,7 +45,9 @@ module.exports = {
     require.resolve('./polyfills'),
     // Finally, this is your app's code:
     //paths.appMainJs
-    paths.appErpJs
+    //paths.appErpJs
+    //paths.appTodoJs
+    paths.appLoginJs
     // We include the app code last so that if there is a runtime error during
     // initialization, it doesn't blow up the WebpackDevServer client, and
     // changing JS code would still trigger a refresh.
@@ -181,7 +183,9 @@ module.exports = {
     // Generates an `index.html` file with the <script> injected.
     new HtmlWebpackPlugin({
       inject: true,
-      template: paths.appHtml,
+      //template: paths.appHtml,
+      //template: paths.appTodoHtml,
+      template: paths.appLoginHtml,
     }),
     // Makes some environment variables available to the JS code, for example:
     // if (process.env.NODE_ENV === 'development') { ... }. See `./env.js`.
