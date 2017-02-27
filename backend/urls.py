@@ -25,4 +25,5 @@ urlpatterns = [
     url(r'^manitest/$', views.manitest),
     url(r'^$',generic.TemplateView.as_view(template_name='index.html')),
     url(r'^erp/', include('erp.urls')),
+    url(r'^demo/', include('demo.urls')),
 ]
