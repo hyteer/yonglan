@@ -58,6 +58,7 @@ module.exports = {
     // Finally, this is your app's code:
     vendors: ["react", "react-dom"],
     erp: paths.appErpJs,
+    login: paths.appLoginJs,
     //app: paths.appIndexJs,
     main: './src/Main.jsx'
   },

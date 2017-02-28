@@ -75,8 +75,8 @@ module.exports = {
   appTodoHtml: resolveApp('src/todo_org/index.html'),
   demoNavigatingJs:resolveApp('src/demo/navigating/index.js'),
   demoNavigatingHtml:resolveApp('src/demo/navigating/public/index.html'),
-  demoNavigatingJs:resolveApp('src/demo/routest/Index.js'),
-  demoRouteHtml: resolveApp('src/demo/routest/index.html'),
+  demoNavigatingJs:resolveApp('src/demo/route/Index.js'),
+  demoRouteHtml: resolveApp('src/demo/route/index.html'),
 
   // LoginPage
   appLoginJs: resolveApp('src/ErpLogin.jsx'),

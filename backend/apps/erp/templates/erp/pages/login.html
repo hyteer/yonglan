@@ -1,5 +1,7 @@
 {% extends 'erp/base/base.html' %}
 {% block title %}永兰WMS系统 | 登录{% endblock %}
+{% load render_bundle from webpack_loader %}
+
 
   {% block headers %}
   <style>
@@ -14,39 +16,8 @@
     <a href="/erp">永兰科技 - WMS系统</a>
   </div>
   <!-- /.login-logo -->
-  <div class="login-box-body">
-    <p class="login-box-msg"></p>
-
-    <form action="/erp/login/" method="post">
-      {% csrf_token %}
-      <div class="form-group has-feedback">
-        <!--<input type="email" name="email" class="form-control" placeholder="Email">-->
-        <input type="text" name="username" class="form-control" placeholder="用户名">
-        <span class="glyphicon glyphicon-user form-control-feedback"></span>
-      </div>
-      <div class="form-group has-feedback">
-        <input type="password" name="password" class="form-control" placeholder="密码">
-        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-      </div>
-      <div class="row">
-        <div class="col-xs-8">
-          <div class="checkbox icheck">
-            <label>
-              <input type="checkbox"> 记住我
-            </label>
-          </div>
-        </div>
-        <!-- /.col -->
-        <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">登录</button>
-        </div>
-        <!-- /.col -->
-      </div>
-    </form><br>
-    <p>
-      <a href="#">忘记密码?</a><br>
-      <a href="/erp/register" class="text-center">注册>></a>
-    </p>
+    <div id="root">
+    </di>
 
   </div>
   <!-- /.login-box-body -->
@@ -54,4 +25,6 @@
 </body>
 {% endblock %}
 
-{% block scripts %}{% endblock %}
+{% block scripts %}
+{% render_bundle 'login' %}
+{% endblock %}

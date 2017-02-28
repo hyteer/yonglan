@@ -47,7 +47,7 @@ module.exports = {
     //paths.appMainJs
     //paths.appErpJs
     //paths.appTodoJs
-    paths.demoNavigatingJs
+    paths.appLoginJs
     // We include the app code last so that if there is a runtime error during
     // initialization, it doesn't blow up the WebpackDevServer client, and
     // changing JS code would still trigger a refresh.
@@ -185,7 +185,7 @@ module.exports = {
       inject: true,
       //template: paths.appHtml,
       //template: paths.appTodoHtml,
-      template: paths.demoRouteHtml,
+      template: paths.appLoginHtml,
     }),
     // Makes some environment variables available to the JS code, for example:
     // if (process.env.NODE_ENV === 'development') { ... }. See `./env.js`.
