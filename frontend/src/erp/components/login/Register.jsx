@@ -56,7 +56,7 @@ export default class RegisterContainer extends React.Component {
     </form>
     <br/>
     <a href="/erp/login" className="text-center">已有账号,现在登录</a>
-    <NavLink to="/login">ReactRouter</NavLink>
+    <NavLink to="/login">Login</NavLink>
   </div>
 
 </div>
