@@ -71,13 +71,17 @@ module.exports = {
   appIndexJs: resolveApp('src/index.js'),
   appErpJs: resolveApp('src/Erp.js'),
   appMainJs: resolveApp('src/Main.jsx'),
-  appTodoJs: resolveApp('src/todo_org/index.js'),
-  appTodoHtml: resolveApp('src/todo_org/index.html'),
+  //appTodoJs: resolveApp('src/todo_org/index.js'),
+  //appTodoHtml: resolveApp('src/todo_org/index.html'),
   demoNavigatingJs:resolveApp('src/demo/navigating/index.js'),
   demoNavigatingHtml:resolveApp('src/demo/navigating/public/index.html'),
   demoNavigatingJs:resolveApp('src/demo/route/Index.js'),
   demoRouteHtml: resolveApp('src/demo/route/index.html'),
-
+  /***************** Demo *******************/
+  appTodoJs: resolveApp('src/todo/index.js'),
+  appTodoHtml: resolveApp('src/todo/index.html'),
+  appCounterJs: resolveApp('src/demo/counter/index.jsx'),
+  appCounterHtml: resolveApp('src/demo/counter/index.html'),
   // LoginPage
   appLoginJs: resolveApp('src/ErpLogin.jsx'),
   appLoginHtml: resolveApp('public/login.html'),
