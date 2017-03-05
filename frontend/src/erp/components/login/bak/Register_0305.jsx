@@ -1,5 +1,5 @@
 import React from "react"
-
+import NavLink from './NavLink'
 
 export default class RegisterContainer extends React.Component {
   render() {
@@ -51,7 +51,7 @@ export default class RegisterContainer extends React.Component {
           </div>
         </form>
         <br/>
-        <a to="/login" className="text-center">已有账号,现在登录</a>
+        <NavLink to="/login" className="text-center">已有账号,现在登录</NavLink>
 
       </div>
 

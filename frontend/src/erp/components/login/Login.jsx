@@ -1,12 +1,56 @@
 import React from "react"
-import NavLink from './NavLink'
+import ReactDOM from "react-dom"
+
+
+const changeTitle = (title) => {
+  document.title = title
+}
 
 export default class LoginContainer extends React.Component {
+  constructor(props) {
+    super(props);
+    //this.handleLoginClick = this.handleLoginClick.bind(this);
+    //this.handleLogoutClick = this.handleLogoutClick.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+    this.handleLoginTitle = this.handleLoginTitle.bind(this);
+    this.handleRegisterTitle = this.handleRegisterTitle.bind(this);
+    this.state = {
+      isLoggedIn: false,
+      liked: false,
+      title: '永兰WMS系统 | 登录'
+    };
+  }
+
+  handleLoginClick() {
+    console.log("switch to register...")
+    changeTitle('永兰WMS系统 | 注册')
+  }
+
+  switchToRegister() {
+    console.log("switch to register...")
+    changeTitle('永兰WMS系统 | 注册')
+  }
+  handleClick() {
+    this.setState({liked: !this.state.liked});
+  }
+  handleLoginTitle() {
+    this.setState({title: '永兰WMS系统 | 登录11'});
+    //changeTitle(title)
+    console.log("clicked...")
+    console.log(this.state.title)
+    changeTitle('永兰WMS系统 | 登录2')
+    console.log("Test2...")
+  }
+  handleRegisterTitle() {
+    this.setState({title: '永兰WMS系统 | 注册'});
+
+  }
+
   render() {
+    var text = this.state.liked ? '喜欢' : '不喜欢';
+    var title = '永兰WMS系统 | 登录';
     return (
-      <div className="login-box-body">
-        <p className="login-box-msg"></p>
-        <form action="/erp/login/" method="post">
+      <div>
           <div className="form-group has-feedback">
             <input type="text" name="username" className="form-control" placeholder="用户名"/>
             <span className="glyphicon glyphicon-user form-control-feedback"></span>
@@ -29,12 +73,11 @@ export default class LoginContainer extends React.Component {
             </div>
             {/* <!-- /.col --> */}
           </div>
-        </form><br/>
-        <p>
-          <a href="#">忘记密码?</a><br/>
-          <NavLink to="/register" className="text-center">注册</NavLink>
-        </p>
       </div>
     )
   }
 }
+
+
+
+// END

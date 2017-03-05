@@ -22,7 +22,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^view2/',generic.TemplateView.as_view(template_name='view2.html')),
     url(r'^react/',generic.TemplateView.as_view(template_name='react.html')),
-    url(r'^manitest/$', views.manitest),
     url(r'^$',generic.TemplateView.as_view(template_name='index.html')),
     url(r'^erp/', include('erp.urls')),
     url(r'^demo/', include('demo.urls')),

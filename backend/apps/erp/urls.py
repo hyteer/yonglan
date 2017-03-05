@@ -13,4 +13,5 @@ urlpatterns = [
     url(r'^$',generic.TemplateView.as_view(template_name='erp/index.html')),
     #url(r'^$', views.index, name='home'),
     url(r'^login/$', generic.TemplateView.as_view(template_name='erp/pages/login.html')),
+    url(r'^test/$', views.test),
 ]
