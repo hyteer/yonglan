@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
+import {CallPrint,hasClass} from '../../Utils'
 
 class Header extends Component {
 
   sidebarToggle(e) {
     e.preventDefault();
+    console.log("this is sidebar...")
+    CallPrint("hi,it'sfsft.");
+    var obj = document.getElementsByTagName('body')[0]
+    var xx = hasClass(obj,'sidebar-fixed')
+    console.log("xx:"+xx)
+    //Utils.changeBody();
     document.body.classList.toggle('sidebar-hidden');
   }
 
