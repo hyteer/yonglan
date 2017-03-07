@@ -83,8 +83,8 @@ module.exports = {
   appCounterJs: resolveApp('src/demo/counter/index.jsx'),
   appCounterHtml: resolveApp('src/demo/counter/index.html'),
   // LoginPage
-  appLoginJs: resolveApp('src/ErpLogin.jsx'),
-  appLoginHtml: resolveApp('public/login.html'),
+  appDemoJs: resolveApp('src/Form.jsx'),
+  appDemoHtml: resolveApp('public/demo.html'),
   //appIndexJs: resolveApp('src/Erp.js'),
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),
