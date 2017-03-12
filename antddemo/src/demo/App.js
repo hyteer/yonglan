@@ -4,6 +4,7 @@ import First from './First'
 import LoginForm from './LoginForm'
 import GridDemo from './FristGrid'
 import StyleDemo from './StyleDemo'
+import LayoutDemo from './FirstLayout'
 
 class DemoApp extends Component {
   render() {
@@ -25,6 +26,7 @@ class DemoApp extends Component {
         <div>
           <StyleDemo />
         </div>
+
       </div>
     );
   }

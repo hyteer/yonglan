@@ -6,10 +6,27 @@ class SiderDemo extends React.Component {
   state = {
     collapsed: false,
   };
+  logoText = "YongLan Tech"
+  changeLogo = () => {
+
+    console.log(this.state.collapsed)
+    if(this.state.collapsed){
+      //console.log("collapsed...")
+      //console.log(this.state)
+      this.logoText = "YongLan Tech"
+      //alert("ready to uncollapsed...")
+    }else{
+      //console.log("uncollapsed...")
+      //console.log(this.state)
+      this.logoText = "YLT"
+      //alert("ready to collapsed...")
+    }
+  }
   toggle = () => {
     this.setState({
       collapsed: !this.state.collapsed,
     });
+    this.changeLogo();
   }
   render() {
     return (
@@ -20,7 +37,9 @@ class SiderDemo extends React.Component {
           collapsible
           collapsed={this.state.collapsed}
         >
-          <div className="logo" />
+          <div id="logo" className="logo">
+            <span>{this.logoText}</span>
+            </div>
           <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
             <Menu.Item key="1">
               <Icon type="user" />
@@ -38,13 +57,14 @@ class SiderDemo extends React.Component {
         </Sider>
         <Layout>
           <Header style={{ background: '#fff', padding: 0 }}>
-            <a href="#">
+
             <Icon
               className="trigger"
               type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
               onClick={this.toggle}
             />
-           </a>
+            <a href="#">Test</a>
+
           </Header>
           <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
             Content

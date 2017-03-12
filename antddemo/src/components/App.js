@@ -6,7 +6,7 @@ export default React.createClass({
     return (
       <div>
         <h1>Demos</h1>
-        <ul role="nav">
+        <ul role="nav" className="navbar">
           <li><NavLink to="/" onlyActiveOnIndex>Home</NavLink></li>
           <li><NavLink to="/about">About</NavLink></li>
         </ul>
