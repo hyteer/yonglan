@@ -69,6 +69,10 @@ module.exports = {
   appPublic: resolveApp('public'),
   appHtml: resolveApp('public/index.html'),
   appIndexJs: resolveApp('src/index.js'),
+  /*******Demo*********/
+  //routeIndexJs: resolveApp('src/demo/routeOrg/index.js'),
+  //routeHtml: resolveApp('src/demo/routeOrg/index.html'),
+  /********END*******/
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),
   yarnLockFile: resolveApp('yarn.lock'),

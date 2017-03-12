@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import { Button } from 'antd';
 import './App.css';
+import DemoApp from './demo/App'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Button type="primary">Button</Button>
+        <h2>Main</h2>
+        <DemoApp />
       </div>
     );
   }

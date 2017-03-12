@@ -46,7 +46,6 @@ module.exports = {
     // We ship a few polyfills by default:
     require.resolve('./polyfills'),
     // Finally, this is your app's code:
-    //paths.appIndexJs
     paths.appIndexJs
     // We include the app code last so that if there is a runtime error during
     // initialization, it doesn't blow up the WebpackDevServer client, and
@@ -194,7 +193,6 @@ module.exports = {
     // Generates an `index.html` file with the <script> injected.
     new HtmlWebpackPlugin({
       inject: true,
-      //template: paths.appHtml,
       template: paths.appHtml,
     }),
     // Makes some environment variables available to the JS code, for example:

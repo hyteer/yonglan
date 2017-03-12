@@ -75,8 +75,8 @@ module.exports = {
   //appTodoHtml: resolveApp('src/todo_org/index.html'),
   demoNavigatingJs:resolveApp('src/demo/navigating/index.js'),
   demoNavigatingHtml:resolveApp('src/demo/navigating/public/index.html'),
-  demoNavigatingJs:resolveApp('src/demo/route/Index.js'),
-  demoRouteHtml: resolveApp('src/demo/route/index.html'),
+  demoRouteJs:resolveApp('src/demo/routeOrg/index.js'),
+  demoRouteHtml: resolveApp('src/demo/routeOrg/index.html'),
   /***************** Demo *******************/
   appTodoJs: resolveApp('src/todo/index.js'),
   appTodoHtml: resolveApp('src/todo/index.html'),

@@ -24,3 +24,14 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+/************** Styles Added by YT ******************/
+#myLoginForm {
+  max-width: 300px;
+}
+#myLoginForm  .login-form-forgot {
+  float: right;
+}
+#myLoginForm  .login-form-button {
+  width: 100%;
+}
