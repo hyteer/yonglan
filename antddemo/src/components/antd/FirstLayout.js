@@ -38,6 +38,7 @@ class SiderDemo extends React.Component {
           collapsed={this.state.collapsed}
         >
           <div id="logo" className="logo">
+            <img src="favicon.ico" />
             <span>{this.logoText}</span>
             </div>
           <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
