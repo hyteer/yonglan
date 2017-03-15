@@ -1,17 +1,17 @@
 <template>
   <div class="hello">
     <h2>{{ msg }}</h2>
-    <h3>Some vue demos</h3>
+    <h3>Hello2</h3>
     just for demonstrate...
   </div>
 </template>
 
 <script>
 export default {
-  name: 'hello',
+  name: 'hello2',
   data () {
     return {
-      msg: 'Demo Home'
+      msg: 'Hello2 Home'
     }
   }
 }

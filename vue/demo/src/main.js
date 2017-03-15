@@ -1,13 +1,15 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
+import Vuex from 'vuex'
 import App from './App'
 import router from './router'
-import iView from 'iview';
-import 'iview/dist/styles/iview.css';    // 使用 CSS
+//import iView from 'iview';
+//import 'iview/dist/styles/iview.css'   // 使用 CSS
 
 Vue.config.productionTip = false
-Vue.use(iView)
+Vue.use(Vuex)
+//Vue.use(iView)
 
 /* eslint-disable no-new */
 new Vue({
@@ -16,3 +18,18 @@ new Vue({
   template: '<App/>',
   components: { App }
 })
+
+const store = new Vuex.Store({
+  state: {
+    count: 0
+  },
+  mutations: {
+    increment (state) {
+      state.count++
+    }
+  }
+})
+
+store.commit('increment')
+
+console.log(store.state.count) // -> 1
