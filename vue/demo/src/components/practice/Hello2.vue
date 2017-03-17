@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'hello2',
+  name: 'button-counter',
   data () {
     return {
       msg: 'Hello2 Home'

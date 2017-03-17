@@ -7,6 +7,7 @@ import Advanced from '@/components/Advanced'
 // import Event from '@/components/practice/Event'
 import Event from '@/components/practice/Event'
 import Hello2 from '@/components/practice/Hello2'
+import Counter from '@/components/practice/Counter'
 
 Vue.use(Router)
 
@@ -17,6 +18,7 @@ export default new Router({
     {path: '/basic', name: 'Basic', component: Basic},
     {path: '/advanced', name: 'Advanced', component: Advanced},
     // {path: '/iview', name: 'IviewDemo', component: IviewDemo},
-    {path: '/event', name: 'Event', component: Event}
+    {path: '/event', name: 'Event', component: Event},
+    {path: '/count', name: 'Counter', component: Counter}
   ]
 })

@@ -10,26 +10,30 @@ import router from './router'
 Vue.config.productionTip = false
 Vue.use(Vuex)
 //Vue.use(iView)
-
-/* eslint-disable no-new */
-new Vue({
-  el: '#app',
-  router,
-  template: '<App/>',
-  components: { App }
-})
-
 const store = new Vuex.Store({
   state: {
     count: 0
   },
   mutations: {
-    increment (state) {
-      state.count++
+    increment (state,n) {
+      state.count += n
+    },
+    decrement (state,n) {
+      state.count -= n
     }
   }
 })
+/* eslint-disable no-new */
+new Vue({
+  el: '#app',
+  store,
+  router,
+  template: '<App/>',
+  components: { App }
+})
 
-store.commit('increment')
+
+
+store.commit('increment',3)
 
 console.log(store.state.count) // -> 1
