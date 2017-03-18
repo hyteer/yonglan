@@ -9,7 +9,9 @@ function resolve (dir) {
 
 module.exports = {
   entry: {
-    app: './src/main.js'
+    //app: './src/main.js'
+    // app: './src/demo/counter/app.js'
+    app: './src/demo/shopping-cart/app.js'
   },
   output: {
     path: config.build.assetsRoot,
@@ -27,6 +29,7 @@ module.exports = {
   },
   module: {
     rules: [
+      /*
       {
         test: /\.(js|vue)$/,
         loader: 'eslint-loader',
@@ -36,6 +39,7 @@ module.exports = {
           formatter: require('eslint-friendly-formatter')
         }
       },
+      */
       {
         test: /\.vue$/,
         loader: 'vue-loader',

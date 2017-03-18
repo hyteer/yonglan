@@ -3,13 +3,15 @@
   <h3>Counter Demo</h3>
   <p>{{ count }}</p>
   <button @click="add">+</button>
-  <button @click="minus">-</button>
+  <button @click="decrement">-</button>
   <button v-on:click="add">v-on + </button>
 
 </div>
 </template>
 
 <script>
+import { mapActions } from 'vuex'
+
 export default {
   name: 'counter',
   computed: {
@@ -22,10 +24,20 @@ export default {
     add () {
       this.$store.commit('increment', 3)
     },
+    ...mapActions([
+      'decrement'
+    ])
+  }
+  /*
+  methods: {
+    add () {
+      this.$store.commit('increment', 3)
+    },
     minus () {
       this.$store.commit('decrement', 3)
     }
   }
+  */
 }
 /*
 const Counter = {

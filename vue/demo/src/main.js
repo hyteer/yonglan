@@ -18,9 +18,13 @@ const store = new Vuex.Store({
     increment (state,n) {
       state.count += n
     },
-    decrement (state,n) {
-      state.count -= n
+    decrement (state) {
+      state.count -= 1
     }
+  },
+  actions: {
+    increment: ({ commit }) => commit('increment',n),
+    decrement: ({ commit }) => commit('decrement')
   }
 })
 /* eslint-disable no-new */
