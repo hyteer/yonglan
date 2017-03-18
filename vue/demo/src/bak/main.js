@@ -2,20 +2,14 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import Vuex from 'vuex'
-import VueRouter from 'vue-router'
 import App from './App'
-import DemoApp from './DemoApp'
 import router from './router'
-import 'iview/dist/styles/iview.css'
-
-import iView from 'iview'
+//import iView from 'iview';
 //import 'iview/dist/styles/iview.css'   // 使用 CSS
 
 Vue.config.productionTip = false
-Vue.use(VueRouter)
 Vue.use(Vuex)
-Vue.use(iView)
-
+//Vue.use(iView)
 const store = new Vuex.Store({
   state: {
     count: 0
@@ -39,9 +33,8 @@ new Vue({
   el: '#app',
   store,
   router,
-  render: h => h(DemoApp)
-  //template: '<DemoApp/>',
-  //components: { DemoApp }
+  template: '<App/>',
+  components: { App }
 })
 
 

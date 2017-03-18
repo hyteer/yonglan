@@ -1,8 +1,7 @@
 <template>
   <div class="hello">
     <h2>{{ msg }}</h2>
-    <h3>Hello2</h3>
-    just for demonstrate...
+    Hello,just for demonstrate...
   </div>
 </template>
 
@@ -11,7 +10,7 @@ export default {
   name: 'button-counter',
   data () {
     return {
-      msg: 'Hello2 Home'
+      msg: 'Hello Demo'
     }
   }
 }

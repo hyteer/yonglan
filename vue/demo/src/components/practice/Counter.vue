@@ -2,9 +2,9 @@
   <div class="counter">
   <h3>Counter Demo</h3>
   <p>{{ count }}</p>
-  <button @click="add">+</button>
-  <button @click="decrement">-</button>
-  <button v-on:click="add">v-on + </button>
+  <i-button @click="add">+</i-button>
+  <i-button type="primary" @click="decrement">-</i-button>
+  <i-button v-on:click="add">v-on + </i-button>
 
 </div>
 </template>
@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     add () {
-      this.$store.commit('increment', 3)
+      this.$store.commit('increment', 2)
     },
     ...mapActions([
       'decrement'

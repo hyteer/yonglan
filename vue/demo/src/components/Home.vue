@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'hello',
+  name: 'home',
   data () {
     return {
       msg: 'Demo Home'
