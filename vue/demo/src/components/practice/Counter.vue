@@ -23,6 +23,7 @@ export default {
   methods: {
     add () {
       this.$store.commit('increment', 2)
+      this.debugLog("add action2...")
     },
     ...mapActions([
       'decrement'

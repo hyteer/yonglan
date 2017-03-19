@@ -17,6 +17,7 @@ a.router-link-active {
                 <li><router-link to="/iview">Iview</router-link></li>
                 <li><router-link to="/hello">Hello</router-link></li>
                 <li><router-link to="/basic">Basic</router-link></li>
+                <li><router-link to="/axios">Axios</router-link></li>
                 <li><router-link to="/event">Event</router-link></li>
                 <li><router-link to="/count">Counter</router-link></li>
             </ul>

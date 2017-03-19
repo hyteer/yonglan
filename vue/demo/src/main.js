@@ -3,6 +3,10 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import VueRouter from 'vue-router'
+import { debugLog,ytdebug,http,getResp } from './utils'
+//var conf = require('../config/conf')
+import conf from '../config/conf'
+
 import App from './App'
 import DemoApp from './DemoApp'
 import router from './router'
@@ -16,6 +20,26 @@ Vue.use(VueRouter)
 Vue.use(Vuex)
 Vue.use(iView)
 
+
+//var info = debugLog("test log...")  // Test my utils
+//console.log("Info:", info)
+// ------------- Init Custom prototypes -------------
+//var http = axios.create(this.conf.axiosConfig)
+Vue.prototype.conf = conf
+Vue.prototype.debugLog = debugLog
+Vue.prototype.http = http
+
+
+console.log("Conf:",conf)
+//console.log(conf)
+
+
+//ytdebug()
+//var res = http('/api/')
+//console.log("Res:"+res)
+//var res2 = getResp()
+//console.log("Res2:"+res2)
+// ------------------- Init Store --------------------
 const store = new Vuex.Store({
   state: {
     count: 0
@@ -44,8 +68,6 @@ new Vue({
   //components: { DemoApp }
 })
 
-
-
-store.commit('increment',3)
+//store.commit('increment',3)
 
 console.log(store.state.count) // -> 1
