@@ -6,6 +6,7 @@
     <li><router-link to="/iview/basic">Basic</router-link></li>
     <li><router-link to="/iview/button">Button</router-link></li>
     <li><router-link to="/iview/message">Message</router-link></li>
+    <li><router-link to="/iview/layout">Layout</router-link></li>
   </ul>
     <div id="demo-container">
     <router-view class="child"></router-view>

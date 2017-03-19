@@ -12,6 +12,7 @@ import Iview from '@/demo/iview/App'
 import BasicDemo from '@/demo/iview/Basic'
 import Message from '@/demo/iview/Message'
 import Button from '@/demo/iview/Button'
+import Layout from '@/demo/iview/Layout'
 import AxiosDemo from '@/demo/Axios'
 
 Vue.use(Router)
@@ -31,6 +32,7 @@ export default new Router({
         { path: 'basic', component: BasicDemo },
         { path: 'button', component: Button },
         { path: 'message', component: Message },
+        { path: 'layout', component: Layout },
       ]
     }
   ]
