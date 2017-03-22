@@ -10,6 +10,7 @@ function resolve (dir) {
 module.exports = {
   entry: {
     app: './src/main.js'
+    //app: './src/demo/chat/app.js'
     //app: './src/demo/counter/app.js'
     //app: './src/demo/shopping-cart/app.js'
   },

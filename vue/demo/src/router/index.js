@@ -10,9 +10,11 @@ import Hello from '@/components/practice/Hello'
 import Counter from '@/components/practice/Counter'
 import Iview from '@/demo/iview/App'
 import BasicDemo from '@/demo/iview/Basic'
+import Testing from '@/components/practice/Testing'
 import Message from '@/demo/iview/Message'
 import Button from '@/demo/iview/Button'
 import Layout from '@/demo/iview/Layout'
+import CustomLayout from '@/demo/iview/CustomLayout'
 import AxiosDemo from '@/demo/Axios'
 
 Vue.use(Router)
@@ -22,6 +24,7 @@ export default new Router({
     {path: '/home', name: 'Home', component: Home},
     {path: '/hello', name: 'Hello', component: Hello},
     {path: '/basic', name: 'Basic', component: Basic},
+    {path: '/testing', name: 'Testing', component: Testing},
     {path: '/axios', name: 'AxiosDemo', component: AxiosDemo},
     {path: '/advanced', name: 'Advanced', component: Advanced},
     // {path: '/iview', name: 'IviewDemo', component: IviewDemo},
@@ -33,6 +36,7 @@ export default new Router({
         { path: 'button', component: Button },
         { path: 'message', component: Message },
         { path: 'layout', component: Layout },
+        { path: 'custlayout', component: CustomLayout },
       ]
     }
   ]

@@ -1,10 +1,16 @@
 <template>
-  <div class="counter">
-  <h3>Counter Demo</h3>
+  <div class="testing">
+  <h3>{{ title }}</h3>
   <p>{{ count }}</p>
   <i-button @click="add">+</i-button>
   <i-button type="primary" @click="decrement">-</i-button>
   <i-button v-on:click="incrementAsync">Async Add</i-button>
+  <i-button @click="asyncLog">Async Log</i-button>
+  <i-button @click="demoAwait">Await Demo</i-button>
+  <i-button @click="getUsers">Get Users</i-button>
+
+  <h3>Outouts...</h3>
+  <p>data: {{ users }}</p>
 
 </div>
 </template>
@@ -13,7 +19,15 @@
 import { mapActions } from 'vuex'
 
 export default {
-  name: 'counter',
+  name: 'testing',
+  data () {
+    return {
+      title: 'Testing demo',
+      msg: 'test axios...',
+      apiData: '',
+      users: ''
+    }
+  },
   computed: {
     count () {
       console.log(this.$store.state.count)
@@ -25,9 +39,14 @@ export default {
       this.$store.commit('increment', 2)
       this.debugLog("add action2...")
     },
+    getUsers () {
+      this.http('/api/users/').then(response => this.users = response.data);
+    },
     ...mapActions([
       'decrement',
-      'incrementAsync'
+      'incrementAsync',
+      'asyncLog',
+      'demoAwait'
     ])
   }
   /*

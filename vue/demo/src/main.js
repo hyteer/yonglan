@@ -55,7 +55,28 @@ const store = new Vuex.Store({
   },
   actions: {
     increment: ({ commit }) => commit('increment',n),
-    decrement: ({ commit }) => commit('decrement')
+    decrement: ({ commit }) => commit('decrement'),
+    incrementAsync ({ commit }) {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          commit('increment',1)
+          resolve()
+        }, 1000)
+      })
+    },
+    async asyncLog ({ commit }) {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          console.log("Log: Async testing...")
+          resolve()
+        }, 5000)
+      })
+    },
+    async demoAwait ({ dispatch,getUsers }) {
+      //await dispatch('asyncLog')
+      getUsers()
+      console.log("asyncLog finished...")
+    }
   }
 })
 /* eslint-disable no-new */
