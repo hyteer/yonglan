@@ -11,3 +11,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+header.navbar,header.navbar .navbar-brand { height: 44px; }
+
+
+</style>

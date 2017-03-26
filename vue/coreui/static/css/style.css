@@ -432,22 +432,22 @@ h1, h2, h3, h4, h5, h6,
   color: inherit; }
 
 h1, .h1 {
-  font-size: 2.5rem; }
+  font-size: 2.2rem; }
 
 h2, .h2 {
-  font-size: 2rem; }
-
-h3, .h3 {
-  font-size: 1.75rem; }
-
-h4, .h4 {
   font-size: 1.5rem; }
 
+h3, .h3 {
+  font-size: 1.2rem; }
+
+h4, .h4 {
+  font-size: 1.1rem; }
+
 h5, .h5 {
-  font-size: 1.25rem; }
+  font-size: 1rem; }
 
 h6, .h6 {
-  font-size: 1rem; }
+  font-size: .9rem; }
 
 .lead {
   font-size: 1.25rem;
@@ -2750,14 +2750,14 @@ tbody.collapse.show {
 header.navbar {
   position: relative;
   flex-direction: row;
-  height: 55px;
+  height: 45px;
   padding: 0;
   background-color: #fff;
   border-bottom: 1px solid #cfd8dc; }
   header.navbar .navbar-brand {
     display: inline-block;
     width: 155px;
-    height: 55px;
+    height: 45px;
     padding: 0.5rem 1rem;
     margin-right: 0;
     background-color: #fff;
@@ -6231,7 +6231,7 @@ body {
     padding-left: 7.5px; }
 
 .main .container-fluid {
-  padding: 0 30px; }
+  padding: 0 15px; }
 
 @media all and (-ms-high-contrast: none) {
   html {
@@ -6246,10 +6246,10 @@ app-root {
   min-height: 100vh; }
 
 .app-header {
-  flex: 0 0 55px; }
+  flex: 0 0 45px; }
 
 .app-footer {
-  flex: 0 0 50px; }
+  flex: 0 0 40px; }
 
 .app-body {
   display: flex;
@@ -6270,7 +6270,7 @@ app-root {
   width: 100%; }
 
 .header-fixed .app-body {
-  margin-top: 55px; }
+  margin-top: 45px; }
 
 .sidebar-hidden .sidebar {
   margin-left: -200px; }
@@ -6279,7 +6279,7 @@ app-root {
   position: fixed;
   height: 100%; }
   .sidebar-fixed .sidebar .sidebar-nav {
-    height: calc(100vh - 55px); }
+    height: calc(100vh - 45px); }
 
 .sidebar-fixed .main, .sidebar-fixed .app-footer {
   margin-left: 200px; }
@@ -6292,7 +6292,7 @@ app-root {
   z-index: 999;
   height: 100%; }
   .sidebar-off-canvas .sidebar .sidebar-nav {
-    height: calc(100vh - 55px); }
+    height: calc(100vh - 45px); }
 
 .sidebar-compact .sidebar {
   flex: 0 0 50px; }
@@ -6314,7 +6314,7 @@ app-root {
   right: 0;
   height: 100%; }
   .aside-menu-fixed .aside-menu .tab-content {
-    height: calc(100vh - 2.375rem - 55px); }
+    height: calc(100vh - 2.375rem - 45px); }
 
 .aside-menu-fixed .main, .aside-menu-fixed .app-footer {
   margin-right: 250px; }
@@ -6328,7 +6328,7 @@ app-root {
   z-index: 999;
   height: 100%; }
   .aside-menu-off-canvas .aside-menu .tab-content {
-    height: calc(100vh - 2.375rem - 55px); }
+    height: calc(100vh - 2.375rem - 45px); }
 
 .footer-fixed .app-footer {
   position: fixed;
@@ -6369,7 +6369,7 @@ app-root {
       right: 15px;
       height: inherit; }
   .app-body {
-    margin-top: 55px; }
+    margin-top: 45px; }
   .sidebar {
     position: fixed;
     width: 220px;
@@ -6386,7 +6386,7 @@ app-root {
     width: 220px;
     margin-left: 0; }
     .sidebar-mobile-show .sidebar .sidebar-nav {
-      height: calc(100vh - 55px); }
+      height: calc(100vh - 45px); }
   .sidebar-mobile-show .main {
     margin-right: -220px !important;
     margin-left: 220px !important; } }
@@ -6402,7 +6402,7 @@ app-root {
     padding: 0 1rem;
     font-size: 24px;
     font-weight: 800;
-    line-height: 55px;
+    line-height: 45px;
     color: #fff;
     background: 0;
     border: 0;
@@ -6457,7 +6457,7 @@ app-root {
           list-style: none; }
       .sidebar .nav .nav-item .nav-link, .sidebar .nav .nav-item .navbar .dropdown-toggle, .navbar .sidebar .nav .nav-item .dropdown-toggle {
         display: block;
-        padding: 0.75rem 1rem;
+        padding: 0.5rem .6rem;
         color: #fff;
         text-decoration: none;
         background: transparent; }
@@ -6614,7 +6614,7 @@ app-root {
 
 nav.top-nav {
   position: absolute;
-  top: 55px;
+  top: 45px;
   left: 0;
   z-index: 999;
   display: inline !important;
@@ -7025,9 +7025,9 @@ ul.icons-list {
         font-size: 18px; }
 
 .app-footer {
-  min-height: 50px;
+  min-height: 40px;
   padding: 0 1rem;
-  line-height: 50px;
+  line-height: 40px;
   color: #263238;
   background: #eceff1;
   border-top: 1px solid #cfd8dc; }
@@ -8744,7 +8744,7 @@ base-chart.chart {
     z-index: 999;
     height: 100%; }
     *[dir="rtl"] .aside-menu-off-canvas .aside-menu .tab-content {
-      height: calc(100vh - 2.375rem - 55px); }
+      height: calc(100vh - 2.375rem - 45px); }
   *[dir="rtl"] .sidebar .sidebar-nav {
     direction: ltr; }
     *[dir="rtl"] .sidebar .sidebar-nav * {

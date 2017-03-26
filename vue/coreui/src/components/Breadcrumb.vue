@@ -21,8 +21,17 @@ export default {
       return index === this.list.length - 1
     },
     showName (item) {
-      return item.meta && item.meta.label || item.name
+      return item.meta && item.meta.label || item.header
     }
   }
 }
 </script>
+
+<style scoped>
+.breadcrumb {
+  margin-bottom: 8px;
+  padding: 6px 12px;
+}
+
+
+</style>
